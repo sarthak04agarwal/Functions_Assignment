@@ -2,7 +2,7 @@ test = [2, 4, 6, 8, 10]
 test1 = [2, 5, 10, 20, 21]
 
 def contains(aList, item):
-    if item in aList:
+    if item in test1:
         return( str(item) + " is IN the list")
     else:
         return( str(item) + " is NOT in the list")

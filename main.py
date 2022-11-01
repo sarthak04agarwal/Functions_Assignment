@@ -21,3 +21,6 @@ while(running):
 list_name = input("Please enter the name of the list that you want to check: ")
 item_List = input("Please enter the item that you want to search inside the list: ")
 print(contains(list_name, item_List))
+
+
+indexOf

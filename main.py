@@ -1,26 +1,45 @@
-test = [2, 4, 6, 8, 10]    
+test = [2, 4, 6, 8, 10, 1]    
 test1 = [2, 5, 10, 20, 21]
 
 def contains(aList, item):
-    if item in test1:
-        return( str(item) + " is IN the list")
-    else:
-        return( str(item) + " is NOT in the list")
+    for el in aList:
+        if el == item:
+            return True
+    return False
 
 
-'''
-while(running):
-    for x in range(0, len(test)):
-        if (item == aList[x]):
-            running = False
-            print( str(item) + " is IN the list")
-    else:
-        print( str(item) + " is NOT in the list")
-'''
-
-list_name = input("Please enter the name of the list that you want to check: ")
-item_List = input("Please enter the item that you want to search inside the list: ")
-print(contains(list_name, item_List))
+def indexOf(aList, item):
+    for el in aList:
+        if el == item:
+            return (aList.index(item))
+    return "-1"
 
 
-indexOf
+def reverse(aList):
+    reversed = []
+    for x in range(len(aList)-1, -1, -1):
+        reversed.append(aList[x])
+    return reversed
+
+
+
+def swap(aList, index1, index2):
+    first_Val = 0 
+    second_Val = 0
+    first_Val = aList[index1]
+    second_Val = aList[index2]
+    aList[index1] = second_Val
+    aList[index2] = first_Val
+    return(aList)
+    
+
+
+
+def indexOfMin(aList):
+    min  = aList[0]
+    for x in range(1, len(aList)):
+        if(aList[x] < min):
+            min = aList[x]
+    return(aList.index(min))
+
+print(indexOf(test, 10))

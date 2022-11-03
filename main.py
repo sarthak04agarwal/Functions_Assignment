@@ -7,21 +7,17 @@ def contains(aList, item):
             return True
     return False
 
-
 def indexOf(aList, item):
-    for el in aList:
-        if el == item:
-            return (aList.index(item))
+    for x in range(0, aList):
+        if(aList[x] == item):
+            return x
     return "-1"
-
 
 def reverse(aList):
     reversed = []
     for x in range(len(aList)-1, -1, -1):
         reversed.append(aList[x])
     return reversed
-
-
 
 def swap(aList, index1, index2):
     first_Val = 0 
@@ -30,16 +26,14 @@ def swap(aList, index1, index2):
     second_Val = aList[index2]
     aList[index1] = second_Val
     aList[index2] = first_Val
-    return(aList)
-    
-
-
-
+'''
 def indexOfMin(aList):
     min  = aList[0]
     for x in range(1, len(aList)):
         if(aList[x] < min):
             min = aList[x]
-    return(aList.index(min))
+    return(aList.(min))
+'''
 
-print(indexOf(test, 10))
+##### Not allowed to use Index
+print(indexOf(test, 8))

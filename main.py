@@ -1,5 +1,5 @@
-test = [2, 4, 6, 8, 10, 1]    
-test1 = [2, 5, 10, 20, 21]
+test = [2, 4, 6, 8, 10, 1, 5, 0]    
+test1 = [0, 2, 5, 10, 20, 21, 3, 1, 0]
 
 def contains(aList, item):
     for el in aList:
@@ -8,7 +8,7 @@ def contains(aList, item):
     return False
 
 def indexOf(aList, item):
-    for x in range(0, aList):
+    for x in range(len(aList)):
         if(aList[x] == item):
             return x
     return "-1"
@@ -26,14 +26,13 @@ def swap(aList, index1, index2):
     second_Val = aList[index2]
     aList[index1] = second_Val
     aList[index2] = first_Val
-'''
+
 def indexOfMin(aList):
     min  = aList[0]
+    y = 0
     for x in range(1, len(aList)):
         if(aList[x] < min):
             min = aList[x]
-    return(aList.(min))
-'''
+            y = x
+    return y
 
-##### Not allowed to use Index
-print(indexOf(test, 8))

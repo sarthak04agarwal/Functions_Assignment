@@ -37,4 +37,4 @@ def indexOfMin(aList):
 
 
 ##### Not allowed to use Index
-print(indexOfMin(test1))
+print(indexOf(test, 5))
